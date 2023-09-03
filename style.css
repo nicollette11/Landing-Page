@@ -1,0 +1,136 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #0b626b;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-height: 400px;
+
+}
+
+.text-section {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.image-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+    gap: 16px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+img {
+    max-width: 375px;
+    border: solid black 5px;
+}
+
+ul {
+    text-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    gap: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header-button {
+    width: 80px;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-button-footer {
+    width: 80px;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    border: 5px black solid;
+}
+
+.text-section-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-height: 400px;
+}
+
+.quote-section {
+    background-color: rgb(255, 157, 121);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+button {
+    background-color: #dbe4eb;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    background-color: #92b7a6;
+}
