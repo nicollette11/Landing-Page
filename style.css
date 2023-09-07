@@ -26,8 +26,12 @@ header {
     align-items: center;
     text-align: center;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-right: 20px;
     padding: 10px;
+    background-color: rgb(255, 157, 121);
+    border-radius: 10px;
+    border: black solid 5px;
 }
 
 .image-and-links {
@@ -70,7 +74,7 @@ a {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
@@ -95,11 +99,44 @@ h1 {
 .container {
     padding: 32px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.news-section {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    padding: 15px;
+    max-width: calc(25% - 10px);
+}
+
+.news-section img {
+    max-width: 100%;
+    height: auto;
     border: 5px black solid;
+    margin-bottom: 10px;
+}
+
+.news-section h2 {
+    margin: 0;
+}
+
+.news-section h2, 
+.news-section p {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.headline-center {
+    text-align: center;
+    margin: 0;
 }
 
 .text-section-footer {
@@ -109,6 +146,12 @@ h1 {
     align-items: center;
     padding: 10px;
     max-height: 400px;
+    background-color: #92b7a6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+    text-align: center;
 }
 
 .quote-section {
@@ -133,4 +176,39 @@ button {
 
 main {
     background-color: #92b7a6;
+    border: solid black 5px;
+}
+
+.political-title {
+    background-color: rgb(255, 157, 121);
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px; /* adjust as needed */
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position the tooltip above the image */
+    left: 50%;
+    margin-left: -100px; /* Adjust to center tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
